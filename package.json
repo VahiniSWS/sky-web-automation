@@ -1,0 +1,27 @@
+{
+  "name": "sky-web-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cucumber-js -f @cucumber/pretty-formatter features/ -f json:report/report.json",
+    "clean": "rm -rf screenshots"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@cucumber/pretty-formatter": "*",
+    "chai": "^4.3.6",
+    "cucumber-html-reporter": "^5.5.0",
+    "selenium-cucumber-js": "^1.8.1"
+  },
+  "dependencies": {
+    "chromedriver": "^98.0.1",
+    "dotenv": "^16.0.0",
+    "geckodriver": "^3.0.1",
+    "packages": "^0.0.8",
+    "selenium-webdriver": "^4.1.1"
+  }
+}
